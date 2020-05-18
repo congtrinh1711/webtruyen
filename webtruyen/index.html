@@ -16,15 +16,46 @@
         <div class="container">
           <ul class="header__menu d-flex m-0 align-items-center">
             <li class="header__logo"><a href="https://webtruyen.com/">doc truyen online</a></li>
-            <li class="header__types"><a href="#"><i class="fa fa-list"></i>  Thể Loại</a></li>
+            <li class="header__types"><a href="#"><i class="fa fa-navicon"></i>  Thể Loại</a></li>
             <li class="header__sort"><a href="#"><i class="fa fa-sort"></i>  Sắp Xếp</a></li>
             <li class="header__search">
               <form action="#" method="method">
                 <input type="text" placeholder="Tìm truyện, tác giả..."><span class="header__search-button"><a href="#"><i class="fa fa-search"></i></a></span>
               </form>
             </li>
-            <li class="header__member"><a href="#"><i class="fa fa-user"></i>  Thành Viên</a></li>
+            <li class="header__member"><a href="#"><i class="fa fa-user"></i>  Thành Viên</a>
+              <ul class="drop-menu">
+                <li class="list-drop"><span data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Đăng Nhập</span></li>
+                <li class="list-drop"><span>Đăng kí</span></li>
+              </ul>
+            </li>
           </ul>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-primary">
+              <h5 class="modal-title text-white" id="exampleModalLabel">LOGIN</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">USER:</label>
+                  <input class="form-control" type="text" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">PASSWORD:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary" type="button">LOGIN</button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="home bg-white">
@@ -391,32 +422,32 @@
                           <h3 class="title">TRUYỆN ĐỌC NHIỀU</h3>
                           <div class="story-read__list d-flex"><span class="story-read__list-number circle--red">1</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number circle--blue">2</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number circle--green">3</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number">4</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number">5</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number">6</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="see-more text-center mt-3 mb-3">
@@ -429,32 +460,32 @@
                           <h3 class="title">TRUYỆN MỚI ĐĂNG</h3>
                           <div class="story-read__list d-flex"><span class="story-read__list-number circle--red">1</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number circle--blue">2</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number circle--green">3</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number">4</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number">5</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="story-read__list d-flex"><span class="story-read__list-number">6</span>
                             <div class="story-read__list-content pl-3">
-                              <p>Mao sơn tróc Qúy nhân</p><i class="fa fa-eye"></i><span>71931751</span>
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
                             </div>
                           </div>
                           <div class="see-more text-center mt-3 mb-3">
