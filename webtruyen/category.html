@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>x</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" attr>
@@ -15,8 +16,9 @@
       <div class="header d-flex align-items-center">
         <div class="container">
           <ul class="header__menu d-flex m-0 align-items-center">
-            <li class="header__logo"><a href="https://webtruyen.com/">doc truyen online</a></li>
             <div class="humburger d-xl-none"><i class="fa fa-bars"></i></div>
+            <li class="header__logo"><a href="https://webtruyen.com/">doc truyen online</a></li>
+            <li class="user-member-mb d-xl-none" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-user"></i></li>
             <li class="header__types"><a href="#"><i class="fa fa-navicon"></i>  Thể Loại</a>
               <ul class="list-dropMenu">
                 <li><a href=""><i class="fa fa-tags">Tiên Hiệp</i></a><a href=""><i class="fa fa-tags">Kiếm Hiệp</i></a></li>
@@ -46,6 +48,9 @@
         </div>
       </div>
       <div class="nav-mobile">
+        <div class="button-close">
+          <p class="d-flex"><span>Đóng</span><i class="fa fa-times"></i></p>
+        </div>
         <ul class="list">
           <li class="item-search">
             <form class="form-inline" action="#" method="method">
@@ -55,41 +60,80 @@
           </li>
           <li class="item-nav">
             <div class="nav-content row">
-              <div class="col-12"><a class="list-group-item list-group-item-action active"> Thành Viên<i class="fa fa-angle-down"></i></a></div>
               <div class="col-6 pr-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action"><span class="d-block" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Đăng Nhập</span></a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
               <div class="col-6 pl-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action"><span class="d-block" data-toggle="modal" data-target="#modalRes" data-whatever="@mdo">Đăng ký</span></a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
             </div>
           </li>
           <li class="item-nav">
             <div class="nav-content row">
-              <div class="col-12"><a class="list-group-item list-group-item-action active"> Thể loại<i class="fa fa-angle-down"></i></a></div>
+              <div class="col-12"><a class="list-group-item list-group-item-action active"> Sắp sếp<i class="fa fa-angle-down"></i></a></div>
               <div class="col-6 pr-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action"> Tiên hiệp</a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
               <div class="col-6 pl-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action">Tiên hiệp</a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
               <div class="col-6 pr-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action"> Tiên hiệp</a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
               <div class="col-6 pl-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action">Tiên hiệp</a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
               <div class="col-6 pr-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action"> Tiên hiệp</a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
               <div class="col-6 pl-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action">Tiên hiệp</a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
               <div class="col-6 pr-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action"> Tiên hiệp</a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
               <div class="col-6 pl-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action">Tiên hiệp</a></div>
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
               </div>
             </div>
           </li>
@@ -166,12 +210,12 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-8">
-              <div class="home-nav pt-3 mb-0">
-                <ul class="home-list">
-                  <li><a href=""><i class="fa fa-home">Trang chủ</i></a></li>
-                  <li><a href="">Truyện Tiên Hiệp</a></li>
-                </ul>
-              </div>
+              <nav class="detail-story_breb">
+                <ol class="breadcrumb bg-white">
+                  <li class="breadcrumb-item"><a href="#"><i class="fa fa-home mr-3"></i><span>Trang chủ</span></a></li>
+                  <li class="breadcrumb-item active"><a href="#">Truyện tiên hiệp</a></li>
+                </ol>
+              </nav>
                     <div class="row justify-content-between row_story">
                       <div class="col-12 col-md-6">
                         <h3 class="title">TRUYỆN TIÊN HIỆP</h3>
@@ -285,22 +329,31 @@
                     <h4>Chương 29</h4><span>ngày hôm qua</span>
                   </div>
                 </div>
-              </div>
-              <ul class="list-click-chapter">
-                <li class="active"><a class="text-white" href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li><a href="">></a></li>
-                <li><a href="">40</a></li>
-              </ul>
+              </div><nav aria-label="Page navigation example">
+<ul class="pagination pagination-lg justify-content-center mt-5">
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Previous">
+<span aria-hidden="true">&laquo;</span>
+<span class="sr-only">Previous</span>
+</a>
+</li>
+<li class="page-item active"><a class="page-link" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Next">
+<span aria-hidden="true">&raquo;</span>
+<span class="sr-only">Next</span>
+</a>
+</li>
+</ul>
+</nav>
               <ul class="nav-click">
                 <li><span>Chuyển nhanh đến trang</span></li>
                 <li>
                   <input type="text" name="" placeholder="Nhập số trang">
                 </li>
-                <li><a href="">></a></li>
+                <li><a href="#" style="align-items:unset">»</a></li>
               </ul>
             </div>
             <div class="col-12 col-lg-4">
@@ -454,6 +507,7 @@
         </div>
       </footer>
     </div>
+    <div class="overlay"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
