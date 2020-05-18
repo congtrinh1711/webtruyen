@@ -17,7 +17,19 @@
           <ul class="header__menu d-flex m-0 align-items-center">
             <li class="header__logo"><a href="https://webtruyen.com/">doc truyen online</a></li>
             <div class="humburger d-xl-none"><i class="fa fa-bars"></i></div>
-            <li class="header__types"><a href="#"><i class="fa fa-navicon"></i>  Thể Loại</a></li>
+            <li class="header__types"><a href="#"><i class="fa fa-navicon"></i>  Thể Loại</a>
+              <ul class="list-dropMenu">
+                <li><a href=""><i class="fa fa-tags">Tiên Hiệp</i></a><a href=""><i class="fa fa-tags">Kiếm Hiệp</i></a></li>
+                <li><a href=""><i class="fa fa-tags">Ngôn Tình</i></a><a href=""><i class="fa fa-tags">Truyện Teen</i></a></li>
+                <li><a href=""><i class="fa fa-tags">Đô Thị</i></a><a href=""><i class="fa fa-tags">Quân Sự</i></a></li>
+                <li><a href=""><i class="fa fa-tags">Lịch Sử</i></a><a href=""><i class="fa fa-tags">Xuyên Không</i></a></li>
+                <li><a href=""><i class="fa fa-tags">Truyện Ma</i></a><a href=""><i class="fa fa-tags">Trinh Thám</i></a></li>
+                <li><a href=""><i class="fa fa-tags">Huyền Huyễn</i></a><a href=""><i class="fa fa-tags">Khoa Huyễn</i></a></li>
+                <li><a href=""><i class="fa fa-tags">Dị Giới</i></a><a href=""><i class="fa fa-tags">Võng Du</i></a></li>
+                <li><a href=""><i class="fa fa-tags">Truyện Ngắn</i></a><a href=""><i class="fa fa-tags">Truyện Cười</i></a></li>
+                <li><a href=""><i class="fa fa-tags">Tiểu Thuyết</i></a><a href=""><i class="fa fa-tags">Review</i></a></li>
+              </ul>
+            </li>
             <li class="header__sort"><a href="#"><i class="fa fa-sort"></i>  Sắp Xếp</a></li>
             <li class="header__search">
               <form action="#" method="method">
@@ -27,7 +39,7 @@
             <li class="header__member"><a href="#"><i class="fa fa-user"></i>  Thành Viên</a>
               <ul class="drop-menu">
                 <li class="list-drop"><span data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Đăng Nhập</span></li>
-                <li class="list-drop"><span>Đăng kí</span></li>
+                <li class="list-drop"><span data-toggle="modal" data-target="#modalRes">Đăng kí</span></li>
               </ul>
             </li>
           </ul>
@@ -45,10 +57,10 @@
             <div class="nav-content row">
               <div class="col-12"><a class="list-group-item list-group-item-action active"> Thành Viên<i class="fa fa-angle-down"></i></a></div>
               <div class="col-6 pr-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action">Đăng nhập</a></div>
+                <div class="list-group"><a class="list-group-item list-group-item-action"><span class="d-block" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Đăng Nhập</span></a></div>
               </div>
               <div class="col-6 pl-0">
-                <div class="list-group"><a class="list-group-item list-group-item-action">Đăng ký</a></div>
+                <div class="list-group"><a class="list-group-item list-group-item-action"><span class="d-block" data-toggle="modal" data-target="#modalRes" data-whatever="@mdo">Đăng ký</span></a></div>
               </div>
             </div>
           </li>
@@ -83,28 +95,69 @@
           </li>
         </ul>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header bg-primary">
-              <h5 class="modal-title text-white" id="exampleModalLabel">LOGIN</h5>
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-header">
+              <h5 class="modal-title text-white" id="exampleModalLabel">Thành viên</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
             </div>
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label class="col-form-label" for="recipient-name">USER:</label>
-                  <input class="form-control" type="text" id="recipient-name">
+                  <label class="col-form-label" for="recipient-name">Email:</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Email...">
                 </div>
                 <div class="form-group">
-                  <label class="col-form-label" for="message-text">PASSWORD:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                  <label class="col-form-label" for="message-text">Mật khẩu:</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Password...">
                 </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label" for="message-text">Ghi nhớ mật khẩu</label>
+                </div>
+                <button class="btn btn-primary d-block w-100 mt-3" type="button">Đăng nhập</button>
+                <p><a class="forgot-pass" href="#">Quên mật khẩu?</a></p>
               </form>
             </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-              <button class="btn btn-primary" type="button">LOGIN</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade bd-example-modal-sm" id="modalRes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-white">Đăng ký thành viên</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">Email (bắt buộc):</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Email...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">Tên hiển thị (bắt buộc):</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Tên hiển thị...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">Mật khẩu (ít nhất 6 kí tự):</label>
+                  <input class="form-control form-control-lg" type="password" id="recipient-name" placeholder="******">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">Nhập lại mật khẩu (ít nhất 6 kí tự):</label>
+                  <input class="form-control form-control-lg" type="password" id="recipient-name" placeholder="******">
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="option1" name="inlineRadioOptions" id="inlineRadio1">
+                  <label class="form-check-label" for="message-text">Nam</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="option2" name="inlineRadioOptions" id="inlineRadio2">
+                  <label class="form-check-label" for="message-text">Nữ</label>
+                </div>
+                <button class="btn btn-primary d-block w-100 mt-3" type="button">Đăng ký tài khoản</button>
+              </form>
             </div>
           </div>
         </div>
