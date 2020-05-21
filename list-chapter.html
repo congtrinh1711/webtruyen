@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>x</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" attr>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" attr>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" attr>
+  </head>
+  <body>
+    <div class="wrapper bg-white__home">
+      <div class="header d-flex align-items-center">
+        <div class="container">
+          <ul class="header__menu d-flex m-0 align-items-center">
+            <div class="humburger d-xl-none"><i class="fa fa-bars"></i></div>
+            <li class="header__logo"><a href="https://webtruyen.com/">doc truyen online</a></li>
+            <li class="user-member-mb d-xl-none" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-user"></i></li>
+            <li class="header__types"><a href="#"><i class="fa fa-navicon"></i>  Thể Loại</a>
+              <ul class="list-dropMenu">
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+              </ul>
+            </li>
+            <li class="header__sort"><a href="#"><i class="fa fa-sort"></i>  Sắp Xếp</a>
+              <ul class="list-dropMenu">
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+              </ul>
+            </li>
+            <li class="header__search">
+              <form action="#" method="method">
+                <input type="text" placeholder="Tìm truyện, tác giả..."><span class="header__search-button"><a href="#"><i class="fa fa-search"></i></a></span>
+              </form>
+            </li>
+            <li class="header__member"><a href="#"><i class="fa fa-user"></i>  Thành Viên</a>
+              <ul class="drop-menu">
+                <li class="list-drop"><span data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-sign-in"></i><small>Đăng Nhập</small></span></li>
+                <li class="list-drop"><span data-toggle="modal" data-target="#modalRes"><i class="fa fa-pencil-square-o"></i><small>Đăng kí</small></span></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <div class="button-close">
+          <p class="d-flex"><span>Đóng</span><i class="fa fa-times"></i></p>
+        </div>
+        <ul class="list">
+          <li class="item-search">
+            <form class="form-inline" action="#" method="method">
+              <input class="form-control" type="text" placeholder="Tìm truyện, tác giả..." id="customInput">
+              <button class="btn btn-primary">Tìm kiếm</button>
+            </form>
+          </li>
+          <li class="item-nav">
+            <div class="nav-content row">
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item-nav">
+            <div class="nav-content row">
+              <div class="col-12"><a class="list-group-item list-group-item-action active"> Sắp sếp<i class="fa fa-angle-down"></i></a></div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-white text-center" id="exampleModalLabel">Thành viên</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">Email:</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Email...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">Mật khẩu:</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Password...">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label" for="message-text">Ghi nhớ mật khẩu</label>
+                </div>
+                <button class="btn btn-primary d-block w-100 mt-3" type="button">Đăng nhập</button>
+                <p class="mt-3"><a class="forgot-pass" href="#">Chưa có tài khoản ? Đăng ký</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade bd-example-modal-sm" id="modalRes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-white">Đăng ký thành viên</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">Email (bắt buộc):</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Email...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">Tên hiển thị (bắt buộc):</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Tên hiển thị...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">Mật khẩu (ít nhất 6 kí tự):</label>
+                  <input class="form-control form-control-lg" type="password" id="recipient-name" placeholder="******">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">Nhập lại mật khẩu (ít nhất 6 kí tự):</label>
+                  <input class="form-control form-control-lg" type="password" id="recipient-name" placeholder="******">
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="option1" name="inlineRadioOptions" id="inlineRadio1">
+                  <label class="form-check-label" for="message-text">Nam</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="option2" name="inlineRadioOptions" id="inlineRadio2">
+                  <label class="form-check-label" for="message-text">Nữ</label>
+                </div>
+                <button class="btn btn-primary d-block w-100 mt-3" type="button">Đăng ký tài khoản</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-nav pt-3 mb-0">
+        <div class="container">
+          <nav class="detail-story_breb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home mr-3"></i><span>Trang chủ</span></a></li>
+              <li class="breadcrumb-item"><a href="#">Ngôn tình</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="home-title">
+        <div class="container">
+          <h1>Boss hung mãnh: Ông xã kết hôn nào!</h1>
+          <ul class="nav-list">
+            <li><a href=""><span><i class="fa fa-star mr-1"></i>
+                  <p class="mb-0">8.7/10</p></span></a></li>
+            <li class="ml-3"><a href=""><span><i class="fa fa-eye mr-2"></i>
+                  <p>12461514</p></span></a></li>
+          </ul>
+          <div class="row home-card">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+              <div class="home-img">
+                <div class="box bg-white p-3"><img src="https://img.webtruyen.com/public/images/kiemlaiqdiNZJfMFB.jpg" alt="" width="100%" srcset=""></div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8 col-12">
+              <ul class="list-info">
+                <li><span class="col-3 pl-0">Tác giả</span>
+                  <h4 class="col-9">Thập Nguyệt Sơ</h4>
+                </li>
+                <li><span class="col-3 pl-0">Thể loại</span>
+                  <h4 class="col-9">Ngôn Tình</h4>
+                </li>
+                <li><span class="col-3 pl-0">Trạng thái</span>
+                  <h4 class="text-white bg-success status">Full</h4>
+                </li>
+                <li><span class="col-3 pl-0">Like ngay</span>
+                  <h4 class="col-9"><a class="bg-primary text-white" href=""><i class="fa fa-thumbs-up"></i><small>like 188</small></a><a class="bg-primary text-white" href="">Share</a></h4>
+                </li>
+              </ul>
+              <ul class="list-option row">
+                <li><a href="">Đọc từ đầu</a></li>
+                <li><a href="">Đọc mới nhất</a></li>
+                <li><a href=""><span><i class="fa fa-bars"></i></span><span>Mục lục</span></a></li>
+                <li><a href=""><span><i class="fa fa-heart"></i></span><span>Thêm vào truyện yêu thích</span></a></li>
+              </ul>
+              <p>Sau một đêm kích tình , cô đã thành công trèo lên giường của Nhạc thính Phong , kim cương lão ngũ nổi tiếng toàn quốc .</p>
+              <p>Cô đã trả được thù còn anh sau một đêm lại luôn nhớ đến cô .</p>
+              <p>Ba năm sau, khi gặp cô trong thang máy, anh đã nói:"Nếu ngủ với tôi một đêm, vai diễn xxx sẽ thuộc về cô "</p>
+              <p>"Ngủ với tôi 2 đêm tôi sẽ giúp cô giải quyết được đám cặn bã kia "..."Ngủ với tôi"..."Nhạc Thính Phong"Anh hết trò rồi hả ?"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-content story-update">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <div class="list-chapter">
+                <h2>CHƯƠNG MỚI NHẤT</h2>
+                <hr>
+                <p>Chương 1992:Hy vọng tất cả mọi người có thể hạnh phúc</p>
+                <h2>DANH SÁCH CHƯƠNG</h2>
+                <hr>
+                <ul class="list-chapter-item">
+                  <li><a href="">Chương 1:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(1)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 2:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(2)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 3:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(3)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 4:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(4)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 5:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(5)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 6:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(6)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 7:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(7)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 8:Người đàn ông của cô, tôi đang sử dụng(1)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 9:Người đàn ông của cô, tôi đang sử dụng(2)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 10:Người đàn ông của cô, tôi đang sử dụng(3)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 11:Người đàn ông của cô, tôi đang sử dụng(4)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 21:Tôi - Yến Thanh Ti, đã trở lại(1)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 13:Tôi -Yến Thanh Ti, đã trở lại(2)</a><span>03/07/2017</span></li>
+                  <li><a href="">Chương 1:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(1)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 2:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(2)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 3:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(3)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 4:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(4)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 5:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(5)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 6:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(6)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 7:cô dám chơi tôi,tôi liền lên giường với đàn ông của cô(7)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 8:Người đàn ông của cô, tôi đang sử dụng(1)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 9:Người đàn ông của cô, tôi đang sử dụng(2)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 10:Người đàn ông của cô, tôi đang sử dụng(3)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 11:Người đàn ông của cô, tôi đang sử dụng(4)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 12:Tôi - Yến Thanh Ti, đã trở lại(1)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 13:Tôi -Yến Thanh Ti, đã trở lại(2)</a><span>03/07/2017</span></li>
+                  <li><a href="">Chương 10:Người đàn ông của cô, tôi đang sử dụng(3)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 11:Người đàn ông của cô, tôi đang sử dụng(4)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 12:Tôi - Yến Thanh Ti, đã trở lại(1)</a><span>03/06/2017</span></li>
+                  <li><a href="">Chương 13:Tôi -Yến Thanh Ti, đã trở lại(2)</a><span>03/07/2017</span></li>
+                </ul>
+              </div><nav aria-label="Page navigation example">
+<ul class="pagination pagination-lg justify-content-center mt-5">
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Previous">
+<span aria-hidden="true">&laquo;</span>
+<span class="sr-only">Previous</span>
+</a>
+</li>
+<li class="page-item active"><a class="page-link" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Next">
+<span aria-hidden="true">&raquo;</span>
+<span class="sr-only">Next</span>
+</a>
+</li>
+</ul>
+</nav>
+<ul class="nav-click">
+<li><span>Chuyển nhanh đến trang</span></li>
+<li>
+<input type="text" name="" placeholder="Nhập số trang">
+</li>
+<li><a href="#" style="align-items:unset">»</a></li>
+</ul>
+                    <div class="main-content__text-comment bg-white">
+                      <h3 class="title">NHẬN XÉT CỦA ĐỘC GIẢ</h3>
+                      <div class="vote d-flex">
+                        <div class="vote__number">
+                          <p>Đánh giá trung bình</p>
+                          <h1>4.5/5</h1><span class="stars"><span class="score"></span><span class="star"></span></span><span>(67 nhận xét)</span>
+                        </div>
+                        <div class="vote__range">
+                          <ul class="range__list d-flex">
+                            <li class="star">5<i class="fa fa-star ml-2"></i></li>
+                            <li class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" style="width:75%" aria-valuemax="100"></div>
+                            </li><span class="ml-2">75%</span>
+                          </ul>
+                          <ul class="range__list d-flex">
+                            <li class="star">4<i class="fa fa-star ml-2"></i></li>
+                            <li class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" style="width:50%" aria-valuemax="100"></div>
+                            </li><span class="ml-2">50%</span>
+                          </ul>
+                          <ul class="range__list d-flex">
+                            <li class="star">3<i class="fa fa-star ml-2"></i></li>
+                            <li class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" style="width:30%" aria-valuemax="100"></div>
+                            </li><span class="ml-2">30%</span>
+                          </ul>
+                          <ul class="range__list d-flex">
+                            <li class="star">2<i class="fa fa-star ml-2"></i></li>
+                            <li class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" style="width:20%" aria-valuemax="100"></div>
+                            </li><span class="ml-2">20%</span>
+                          </ul>
+                          <ul class="range__list d-flex">
+                            <li class="star">1<i class="fa fa-star ml-2"></i></li>
+                            <li class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" style="width:10%" aria-valuemax="100"></div>
+                            </li><span class="ml-2">10%</span>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="send-comment">
+                        <p>GỬI NHẬN XÉT CỦA BẠN</p>
+                        <div class="reviews d-flex flex-wrap">
+                          <p>1.Đánh giá của bạn về truyện này</p>
+                          <div class="star-rating">
+                            <input type="radio" name="rating" value="1"><i></i>
+                            <input type="radio" name="rating" value="2"><i></i>
+                            <input type="radio" name="rating" value="3"><i></i>
+                            <input type="radio" name="rating" value="4"><i></i>
+                            <input type="radio" name="rating" value="5"><i></i>
+                          </div>
+                        </div>
+                        <div class="write-comment">
+                          <p>2.Viết nhận xét</p>
+                          <form action="#" method="method">
+                            <textarea class="w-100 p-4" disabled="disabled" placeholder="Nhập nội dung nhận xét..." style="font-size:2rem"></textarea>
+                          </form>
+                          <div class="comment-button w-100 text-right">
+                            <button class="btn btn-primary shadow font-weight-bold"><i class="fa fa-send mr-2"></i><span>GỬI</span></button>
+                          </div>
+                        </div>
+                        <div class="item-comment">
+                          <div class="media p-3"><img class="mr-3 rounded-circle" src="./images/img_avatar3.png" style="width:60px">
+                            <div class="media-body">
+                              <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                              <h4>Nội dung hay.</h4>
+                              <p>This is Photoshop's version  of Lorem Ipsum. ProiThis is Photoshop's version  of Lorem Ipsum. ProiThis is Photoshop's version  of Lorem Ipsum. Proi</p>
+                              <div class="reply-comment"><i class="fa fa-thumbs-up mr-3"></i><a href="#">Trả lời</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-comment">
+                          <div class="media p-3"><img class="mr-3 rounded-circle" src="./images/img_avatar3.png" style="width:60px">
+                            <div class="media-body">
+                              <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                              <h4>Nội dung hay.</h4>
+                              <p>This is Photoshop's version  of Lorem Ipsum. ProiThis is Photoshop's version  of Lorem Ipsum. ProiThis is Photoshop's version  of Lorem Ipsum. Proi</p>
+                              <div class="reply-comment"><i class="fa fa-thumbs-up mr-3"></i><a href="#">Trả lời</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="story-author">
+                <div class="story-author-info"><img src="https://img.webtruyen.com/public/images/news/toptruyenngontinhcungdauhaynhathNLZw.jpg" alt="">
+                  <div class="story-author-info-text">
+                    <h3>Thập Nguyệt Sơ</h3>
+                    <h5>Tác Phẩm :<a href=""> 3</a></h5>
+                  </div>
+                </div>
+                <h2>TRUYỆN CÙNG TÁC GIẢ</h2>
+                <hr>
+                <div class="story-porfo-info"><img src="https://img.webtruyen.com/public/images/news/toptruyentutienhaynhatkhongdoctieccadoiEjwgS.jpg" alt="">
+                  <div class="story-porfo-info-text">
+                    <h3><a href="#">Cực sủng đệ nhất phu nhân</a></h3><span>Thể loại : Ngôn tình</span>
+                  </div>
+                </div>
+                <hr>
+                <div class="story-porfo-info"><img src="https://img.webtruyen.com/public/images/news/toptruyentutienhaynhatkhongdoctieccadoiEjwgS.jpg" alt="">
+                  <div class="story-porfo-info-text">
+                    <h3><a href="#">Cực sủng đệ nhất phu nhân</a></h3><span>Thể loại : Ngôn tình</span>
+                  </div>
+                </div>
+              </div>
+              <div class="types-story">
+                <div class="story-read">
+                        <div class="story-read">
+                          <h3 class="title">TRUYỆN HOT CÙNG THỂ LOẠI</h3>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--red">1</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--blue">2</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--green">3</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">4</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">5</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">6</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="see-more text-center mt-3 mb-3">
+                            <button class="btn btn-primary" id="btn-primary"><a href="#">Xem Thêm</a></button>
+                          </div>
+                        </div>
+                </div>
+                <div class="story-read">
+                        <div class="story-read">
+                          <h3 class="title">TRUYỆN MỚI ĐĂNG</h3>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--red">1</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--blue">2</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--green">3</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">4</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">5</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">6</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="see-more text-center mt-3 mb-3">
+                            <button class="btn btn-primary" id="btn-primary"><a href="#">Xem Thêm</a></button>
+                          </div>
+                        </div>
+                </div>
+              </div>
+              <div class="types-story story-last">
+                <h3 class="title">THỂ LOẠI TRUYỆN</h3>
+                <ul class="types-story__list row">
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                  <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-12">
+              <div class="footer__card">
+                <div class="footer__title">
+                  <h2>THỂ LOẠI HOT</h2>
+                </div>
+                <ul class="list-footer list1">
+                  <li><a href="#">Đô thị</a></li>
+                  <li><a href="#">Ngôn tình</a></li>
+                  <li><a href="#">Tiên Hiệp</a></li>
+                  <li><a href="#">Hài Hước</a></li>
+                  <li><a href="#">Sủng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-8 col-12">
+              <div class="footer__card">
+                <div class="footer__title">
+                  <h2>TOP TỪ KHÓA</h2>
+                </div>
+                <ul class="list-footer list2">
+                  <li><a href="#">Trọng Sinh</a><a href="#">Ngôn Tình</a><a href="#">Chọc tức Vợ Yêu</a><a href="#">Truyện Ngược</a></li>
+                  <li><a href="#">Truyện Âm Hưởng</a><a href="#">Truyện 18+</a><a href="#">Truyện Người Lớn</a></li>
+                  <li><a href="#">pham nhan tu tien</a><a href="#">Du Hành</a><a href="#">hồng nhan họa thủy</a></li>
+                  <li><a href="#">truyensex</a><a href="#">yêu em từ cái nhìn đầu tiên</a></li>
+                  <li><a href="#">tam sinh tam thế thập lý đào hoa</a><a href="#">de ba</a><a href="#">dau pha thuong khung</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12">
+              <div class="footer__card">
+                <div class="footer__title">
+                  <h2>LỜI GIỚI THIỆU</h2>
+                </div>
+                <ul class="list-footer list3">
+                  <li>
+                    <p>Truyện nhiều - Đọc truyện online, đọc truyện chữ, truyện hay. Website luôn cập nhật những bộ truyện mới một cách nhanh nhất</p>
+                  </li>
+                  <li>
+                    <p>Tất cả các truyện trên site đều được độc giả sưu tầm từ các nguồn trên mạng , chúng tôi không chịu bất cứ trách nhiệm nào về vấn đề bản quyền tác giả</p>
+                  </li>
+                  <li>
+                    <p>Nếu các bạn đọc truyện nào thấy có nội dung liên quan đến vấn đề chính trị hoặc có nội dung không lành mạnh vui lòng liên hệ truyennhieu.com@gmail.com để chúng tôi xóa bỏ truyện khỏi trang web. Chân thành cảm ơn</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="overlay"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  </body>
+</html>
